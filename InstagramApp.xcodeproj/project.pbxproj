@@ -33,6 +33,10 @@
 		F7FC56742A96542700A1D5BB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FC56722A96542700A1D5BB /* Constants.swift */; };
 		F7FC56762A966D8800A1D5BB /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FC56752A966D8800A1D5BB /* UIColor+extension.swift */; };
 		F7FC56772A966D8800A1D5BB /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FC56752A966D8800A1D5BB /* UIColor+extension.swift */; };
+		F7FC567C2A968C4000A1D5BB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FC567B2A968C4000A1D5BB /* RegisterViewController.swift */; };
+		F7FC567D2A968C4000A1D5BB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FC567B2A968C4000A1D5BB /* RegisterViewController.swift */; };
+		F7FC567F2A968C5200A1D5BB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FC567E2A968C5200A1D5BB /* LoginViewController.swift */; };
+		F7FC56802A968C5200A1D5BB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FC567E2A968C5200A1D5BB /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +81,8 @@
 		F7FC566F2A96537D00A1D5BB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		F7FC56722A96542700A1D5BB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F7FC56752A966D8800A1D5BB /* UIColor+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extension.swift"; sourceTree = "<group>"; };
+		F7FC567B2A968C4000A1D5BB /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		F7FC567E2A968C5200A1D5BB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +172,7 @@
 		F7FC56442A950CC600A1D5BB /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F7FC567A2A968BD100A1D5BB /* Auth */,
 				F7FC564A2A950D5800A1D5BB /* Profile */,
 				F7FC56492A950D4E00A1D5BB /* Notifications */,
 				F7FC56482A950D4700A1D5BB /* Camera */,
@@ -366,6 +373,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		F7FC567A2A968BD100A1D5BB /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				F7FC567B2A968C4000A1D5BB /* RegisterViewController.swift */,
+				F7FC567E2A968C5200A1D5BB /* LoginViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -501,7 +517,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7FC567F2A968C5200A1D5BB /* LoginViewController.swift in Sources */,
 				F7FC56142A950B4E00A1D5BB /* AppDelegate.swift in Sources */,
+				F7FC567C2A968C4000A1D5BB /* RegisterViewController.swift in Sources */,
 				F7FC56632A96522600A1D5BB /* TabBarVC.swift in Sources */,
 				F7FC56672A96532700A1D5BB /* ExploreViewController.swift in Sources */,
 				F7FC56162A950B4E00A1D5BB /* SceneDelegate.swift in Sources */,
@@ -518,9 +536,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7FC56802A968C5200A1D5BB /* LoginViewController.swift in Sources */,
 				F7FC56682A96532700A1D5BB /* ExploreViewController.swift in Sources */,
 				F7FC562B2A950B4F00A1D5BB /* InstagramAppTests.swift in Sources */,
 				F7FC56712A96537D00A1D5BB /* ProfileViewController.swift in Sources */,
+				F7FC567D2A968C4000A1D5BB /* RegisterViewController.swift in Sources */,
 				F7FC56772A966D8800A1D5BB /* UIColor+extension.swift in Sources */,
 				F7FC566B2A96533A00A1D5BB /* CameraViewController.swift in Sources */,
 				F7FC566E2A96535500A1D5BB /* NotificationsViewController.swift in Sources */,
