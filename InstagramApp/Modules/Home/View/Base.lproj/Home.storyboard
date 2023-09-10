@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eKU-f7-bgX">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -12,7 +13,7 @@
         <scene sceneID="F7l-0T-Kjc">
             <objects>
                 <viewControllerPlaceholder storyboardName="Explore" id="YZc-AJ-5yi" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="qdK-D8-m1k"/>
+                    <tabBarItem key="tabBarItem" title="" id="qdK-D8-m1k"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7DM-cM-2ES" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -22,7 +23,7 @@
         <scene sceneID="hGm-R8-mgL">
             <objects>
                 <viewControllerPlaceholder storyboardName="Camera" id="CRl-bY-V83" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="CrW-gV-5zc"/>
+                    <tabBarItem key="tabBarItem" title="" id="CrW-gV-5zc"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1mO-sL-aB9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -32,7 +33,7 @@
         <scene sceneID="w9H-6h-t44">
             <objects>
                 <viewControllerPlaceholder storyboardName="Notifications" id="sOT-oD-GXw" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="sfI-4W-VNH"/>
+                    <tabBarItem key="tabBarItem" title="" id="sfI-4W-VNH"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gg6-3Q-LvP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -42,7 +43,7 @@
         <scene sceneID="0Mr-TL-nxS">
             <objects>
                 <viewControllerPlaceholder storyboardName="Profile" id="3Sb-80-Ngl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="RcN-eO-bcr"/>
+                    <tabBarItem key="tabBarItem" title="" id="RcN-eO-bcr"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3zC-jH-axt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -56,6 +57,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" systemColor="labelColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="w0d-kq-zJk" kind="relationship" relationship="viewControllers" id="998-gR-i6W"/>
@@ -85,11 +87,11 @@
             </objects>
             <point key="canvasLocation" x="527.48091603053433" y="-1016.1971830985916"/>
         </scene>
-        <!--Home-->
+        <!--Navigation Controller-->
         <scene sceneID="VxY-ok-LKk">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="w0d-kq-zJk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="VrM-nb-IGd"/>
+                    <tabBarItem key="tabBarItem" title="" image="house" catalog="system" id="VrM-nb-IGd"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="60k-t1-I9g">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -107,6 +109,9 @@
     </scenes>
     <resources>
         <image name="house" catalog="system" width="128" height="104"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

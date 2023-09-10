@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import FirebaseCore
+import FirebaseAuth
+import FirebaseFirestore
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,10 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if #available(iOS 16, *) {
             let navigationBarAppearance = UINavigationBarAppearance()
             navigationBarAppearance.configureWithTransparentBackground()
-            navigationBarAppearance.backgroundColor = UIColor.appColor(Constants.AssetsColor.white)
-            navigationBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.black]
-            navigationBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.black]
-            UINavigationBar.appearance().tintColor = UIColor.black
+            navigationBarAppearance.backgroundColor = UIColor.systemBackground
+            navigationBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.label]
+            navigationBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.label]
+            UINavigationBar.appearance().tintColor = UIColor.label
             UINavigationBar.appearance().standardAppearance = navigationBarAppearance
             UINavigationBar.appearance().scrollEdgeAppearance = navigationBarAppearance
         }
@@ -30,17 +33,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if #available(iOS 16, *) {
             let tabBarAppearance = UITabBarAppearance()
             tabBarAppearance.configureWithTransparentBackground()
-            tabBarAppearance.backgroundColor = .white
-            UITabBar.appearance().tintColor = UIColor.black
+            tabBarAppearance.backgroundColor = .systemBackground
+            UITabBar.appearance().tintColor = .label
+          
             UITabBar.appearance().standardAppearance = tabBarAppearance
             // Only run on Xcode version >= 13
             #if swift(>=5.5)
             UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
             #endif
         } else {
-            UITabBar.appearance().barTintColor = .black
-            UITabBar.appearance().tintColor = UIColor.black
+            UITabBar.appearance().barTintColor = .systemBackground
+            UITabBar.appearance().tintColor = .label
         }
+        
+        FirebaseApp.configure()
         return true
     }
 

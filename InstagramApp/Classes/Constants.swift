@@ -52,6 +52,8 @@ class Constants {
         
     }
     
-    
+    enum Corner {
+        static let cornerRadius: CGFloat = 8.0
+    }
     
 }

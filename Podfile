@@ -8,7 +8,9 @@ target 'InstagramApp' do
   # Pods for InstagramApp
 pod 'FirebaseAuth'
 pod 'FirebaseFirestore'
-
+pod 'Firebase/Storage'
+pod 'FirebaseDatabase'
+pod 'SDWebImage'
 
   target 'InstagramAppTests' do
     inherit! :search_paths
